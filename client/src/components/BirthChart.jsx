@@ -12,6 +12,10 @@ const BirthChart = () => {
     const [birthChartMessages, setBirthChartMessages] = useState([]);
 
     const generateChart = () => {
+        setLifePathNumber('');
+        setBirthChart({});
+        setIsGenerated(false);
+        setBirthChartMessages([]);
         if (!name || !dob) {
             alert('Please enter both name and date of birth!');
             return;
